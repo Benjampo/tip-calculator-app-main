@@ -1,0 +1,66 @@
+// Primary
+$strong-cyan : hsl(172, 67%, 45%);
+
+// Neutral
+$very-dark-cyan: hsl(183, 100%, 15%);
+$dark-grayish-cyan: hsl(186, 14%, 43%);
+$darker-grayish-cyan: hsl(184, 14%, 56%);
+$light-grayish-cyan: hsl(185, 41%, 84%);
+$lighter-grayish-cyan: hsl(189, 41%, 97%);
+$white: hsl(0, 0%, 100%);
+
+body {
+    font-family: 'Space Mono', monospace;
+    background: $light-grayish-cyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    display: block;
+    width: 5vw;
+    height: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-card{
+    background-color: $white;
+    border-radius: 10px;
+    margin: 5vw;
+    width: 60%;
+    .card-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .card-info{
+            width: 50vw;
+            padding: 5vw;
+            form {
+                display: flex;
+                flex-flow: column;
+                label{
+                    color: $dark-grayish-cyan;
+                }
+                input[type=text]{
+                    background-color: $lighter-grayish-cyan ;
+                    border: none;
+                    border-radius: 5px;
+                }
+                input[type=radio]{
+                    background-color: $lighter-grayish-cyan ;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+            
+        }
+        .card-results{
+            background-color: $very-dark-cyan;
+            width: 50vw;
+            padding: 1vh 1vw;
+            
+        }
+    }
+    
+    
+}

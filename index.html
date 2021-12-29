@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/scss/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -15,30 +19,62 @@
   </style>
 </head>
 <body>
+  <img class="logo" src="assets/images/logo.svg" alt="logo Splitter">
+  <div class="main-card">
+    <div class="card-content">
+      <section class="card-info">
+        <div class="label">
+          <form action="">
+            <label for="">Bill</label>
+            <input type="text">
+          </form>
+        </div>
+        <div class="label">
+          <form action="">
+            <label for="">Select Tip %</label>
+            <input type="radio">5%
+            <input type="radio">10%
+            <input type="radio">15%
+            <input type="radio">25%
+            <input type="radio">50%
+            <input type="text">Custom
+          </form>
+        </div>
+        <div class="label">
+          <form action="">
+            <label for="">Number of People</label>
+            <input type="text">
+          </form>
+        </div>
+      </section>
+      
+      <section class="card-results">
+        <div class="amount">
+          <div class="infos">
+            <h2>Tip Amount</h2>
+            <h3>/ person</h3>
+          </div>
+          <div class="price">
+            <h1>0.00</h1>
+          </div>
+        </div>
+        <div class="amount">
+          <div class="infos">
+            <h2>Total</h2>
+            <h3>/ person</h3>
+          </div>
+          <div class="price">
+            <h1>0.00</h1>
+          </div>
+        </div>
+        <button>Reset</button>
+      </section>
 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">benjampo</a>.
   </div>
 </body>
 </html>
