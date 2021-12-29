@@ -166,6 +166,14 @@ body {
   border-radius: 10px;
 }
 
+.main-card .card-content .card-info form .dollar-icon {
+  background: url(../images/icon-dollar.svg) no-repeat scroll 5% 50%;
+}
+
+.main-card .card-content .card-info form .person-icon {
+  background: url(../images/icon-person.svg) no-repeat scroll 5% 50%;
+}
+
 .main-card .card-content .card-results {
   background-color: #00494d;
   width: 50vw;

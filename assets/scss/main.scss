@@ -120,8 +120,6 @@ body {
                     border-radius: 10px;
                     padding: 1vh 1vw;
                     text-align: right;
-                    
-
                     &:focus{
                         outline: 1px solid $strong-cyan;
                     }
@@ -130,6 +128,12 @@ body {
                     background-color: $lighter-grayish-cyan ;
                     border: none;
                     border-radius: 10px;
+                }
+                .dollar-icon{
+                    background: url(../images/icon-dollar.svg) no-repeat scroll 5% 50%;
+                }
+                .person-icon{
+                    background: url(../images/icon-person.svg) no-repeat scroll 5% 50%;
                 }
             }
             
