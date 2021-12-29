@@ -59,6 +59,40 @@ body {
   padding: 5vw;
 }
 
+.main-card .card-content .card-info .percentage-option {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr  1fr 1fr;
+      grid-template-columns: 1fr  1fr 1fr;
+  -webkit-column-gap: 1vh;
+          column-gap: 1vh;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  row-gap: 1vw;
+}
+
+.main-card .card-content .card-info .percentage-option input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.main-card .card-content .card-info .percentage-option input[type="text"] {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.main-card .card-content .card-info .percentage-option label {
+  display: inline-block;
+  background-color: #00494d;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+
 .main-card .card-content .card-info form {
   display: -webkit-box;
   display: -ms-flexbox;
