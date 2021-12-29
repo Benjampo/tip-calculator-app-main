@@ -26,16 +26,17 @@ body {
   background-color: white;
   border-radius: 10px;
   margin: 5vw;
-  width: 60%;
+  width: 50%;
+  padding: 2vw 2vh;
 }
 
 .main-card .card-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -44,7 +45,7 @@ body {
 .main-card .card-content button {
   background-color: #26c0ab;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #00494d;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
@@ -56,7 +57,24 @@ body {
 
 .main-card .card-content .card-info {
   width: 50vw;
-  padding: 5vw;
+  border-radius: 10px;
+  padding: 2vh 2vw;
+  padding-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 40vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-card .card-content .card-info .label-block {
+  margin-top: 3vh;
 }
 
 .main-card .card-content .card-info .percentage-option {
@@ -79,17 +97,23 @@ body {
 
 .main-card .card-content .card-info .percentage-option input[type="text"] {
   display: inline-block;
-  padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 10px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 1em;
+  text-align: right;
+  width: 100%;
+  padding: 0;
 }
 
 .main-card .card-content .card-info .percentage-option label {
   display: inline-block;
   background-color: #00494d;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 10px;
   color: white;
   text-align: center;
+  font-size: 1em;
   font-weight: 700;
 }
 
@@ -103,28 +127,41 @@ body {
           flex-flow: column;
 }
 
-.main-card .card-content .card-info form label {
+.main-card .card-content .card-info form .label-title {
   color: #5e7a7d;
+  font-size: 0.7em;
+  margin-bottom: 1vh;
 }
 
 .main-card .card-content .card-info form input[type=text] {
-  background-color: #f4fafa;
+  background-color: #7f9c9f;
   border: none;
-  border-radius: 5px;
-  height: 5vh;
+  border-radius: 10px;
+  padding: 2vh 1vw;
 }
 
 .main-card .card-content .card-info form input[type=radio] {
   background-color: #f4fafa;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .main-card .card-content .card-results {
   background-color: #00494d;
   width: 50vw;
-  border-radius: 5px;
-  padding: 1vh 1vw;
+  border-radius: 10px;
+  padding: 2vh 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 40vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-card .card-content .card-results .amount {
@@ -154,5 +191,9 @@ body {
 .main-card .card-content .card-results .amount .price {
   color: #26c0ab;
   font-size: 1.5em;
+}
+
+.main-card .card-content .card-results .amount .price h1 {
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

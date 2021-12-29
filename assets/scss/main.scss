@@ -28,17 +28,16 @@ body {
     background-color: $white;
     border-radius: 10px;
     margin: 5vw;
-    width: 60%;
-
+    width: 50%;
+    padding: 2vw 2vh;
     .card-content{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
-        
         button {
             background-color: $strong-cyan;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             color: $very-dark-cyan;
             font-family: 'Space Mono', monospace;
             font-weight: 700;
@@ -53,7 +52,16 @@ body {
         }
         .card-info{
             width: 50vw;
-            padding: 5vw;
+            border-radius: 10px;
+            padding: 2vh 2vw;
+            padding-top: 0;
+            display: flex;
+            flex-direction: column;
+            height: 40vh;
+            justify-content: space-between;
+            .label-block{
+                margin-top: 3vh;
+            }
             .percentage-option{
                 display: grid;
                 grid-template-columns: 1fr  1fr 1fr;
@@ -69,36 +77,43 @@ body {
                   }
                 input[type="text"] {
                     display: inline-block;
-                    padding: 10px 20px;
-                    border-radius: 4px;
-                
+                    border-radius: 10px;
+                    font-family: 'Space Mono', monospace;
+                    font-weight: 700;
+                    font-size: 1em;
+                    text-align: right;
+                    width: 100%;
+                    padding: 0;
                 }
                 label {
                     display: inline-block;
                     background-color: $very-dark-cyan;
                     padding: 10px 20px;
-                    border-radius: 4px;
+                    border-radius: 10px;
                     color: $white;
                     text-align: center;
+                    font-size: 1em;
                     font-weight: 700;
                 }
             }
             form {
                 display: flex;
                 flex-flow: column;
-                label{
+                .label-title{
                     color: $dark-grayish-cyan;
+                    font-size: 0.7em;
+                    margin-bottom: 1vh;
                 }
                 input[type=text]{
-                    background-color: $lighter-grayish-cyan ;
+                    background-color: $darker-grayish-cyan ;
                     border: none;
-                    border-radius: 5px;
-                    height: 5vh;
+                    border-radius: 10px;
+                    padding: 2vh 1vw;
                 }
                 input[type=radio]{
                     background-color: $lighter-grayish-cyan ;
                     border: none;
-                    border-radius: 5px;
+                    border-radius: 10px;
                 }
             }
             
@@ -106,8 +121,12 @@ body {
         .card-results{
             background-color: $very-dark-cyan;
             width: 50vw;
-            border-radius: 5px;
-            padding: 1vh 1vw;
+            border-radius: 10px;
+            padding: 2vh 2vw;
+            display: flex;
+            flex-direction: column;
+            height: 40vh;
+            justify-content: space-between;
             .amount{
                 display: flex;
                 align-items: center;
@@ -127,6 +146,9 @@ body {
                 .price{
                     color: $strong-cyan;
                     font-size: 1.5em;
+                    h1{
+                        margin: 0;
+                    }
                 }
             }
         }
