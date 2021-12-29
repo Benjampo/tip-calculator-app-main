@@ -96,25 +96,36 @@ body {
 }
 
 .main-card .card-content .card-info .percentage-option input[type="text"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 5px;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
   font-size: 1em;
   text-align: right;
   width: 100%;
-  padding: 0;
 }
 
 .main-card .card-content .card-info .percentage-option label {
   display: inline-block;
   background-color: #00494d;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   text-align: center;
   font-size: 1em;
   font-weight: 700;
+}
+
+.main-card .card-content .card-info .percentage-option input[type="radio"]:focus + label {
+  background-color: #26c0ab;
+  color: #00494d;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 1px solid #00494d;
 }
 
 .main-card .card-content .card-info form {
@@ -134,10 +145,19 @@ body {
 }
 
 .main-card .card-content .card-info form input[type=text] {
-  background-color: #7f9c9f;
+  font-family: 'Space Mono', monospace;
+  font-size: 1em;
+  font-weight: 700;
+  color: #00494d;
+  background-color: #f4fafa;
   border: none;
   border-radius: 10px;
-  padding: 2vh 1vw;
+  padding: 1vh 1vw;
+  text-align: right;
+}
+
+.main-card .card-content .card-info form input[type=text]:focus {
+  outline: 1px solid #26c0ab;
 }
 
 .main-card .card-content .card-info form input[type=radio] {

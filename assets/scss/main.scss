@@ -73,27 +73,33 @@ body {
                     opacity: 0;
                     position: fixed;
                     width: 0;
-                    
                   }
                 input[type="text"] {
+                    box-sizing: border-box;
                     display: inline-block;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     font-family: 'Space Mono', monospace;
                     font-weight: 700;
                     font-size: 1em;
                     text-align: right;
                     width: 100%;
-                    padding: 0;
                 }
                 label {
                     display: inline-block;
                     background-color: $very-dark-cyan;
                     padding: 10px 20px;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     color: $white;
                     text-align: center;
                     font-size: 1em;
                     font-weight: 700;
+                }
+                input[type="radio"]:focus + label {
+                    background-color: $strong-cyan;
+                    color: $very-dark-cyan;
+                    transition: 1s;
+                    box-sizing: border-box;
+                    outline: 1px solid $very-dark-cyan;
                 }
             }
             form {
@@ -105,10 +111,20 @@ body {
                     margin-bottom: 1vh;
                 }
                 input[type=text]{
-                    background-color: $darker-grayish-cyan ;
+                    font-family: 'Space Mono', monospace;
+                    font-size: 1em;
+                    font-weight: 700;
+                    color: $very-dark-cyan;
+                    background-color: $lighter-grayish-cyan ;
                     border: none;
                     border-radius: 10px;
-                    padding: 2vh 1vw;
+                    padding: 1vh 1vw;
+                    text-align: right;
+                    
+
+                    &:focus{
+                        outline: 1px solid $strong-cyan;
+                    }
                 }
                 input[type=radio]{
                     background-color: $lighter-grayish-cyan ;
